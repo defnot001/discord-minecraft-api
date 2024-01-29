@@ -1,0 +1,35 @@
+{
+	"schemaVersion": 1,
+	"id": "discord-api",
+	"version": "${version}",
+	"name": "discord-api",
+	"description": "This mod exposes http endpoints to interact with a minecraft server using http methods",
+	"authors": [
+		"defnot001"
+	],
+	"contact": {
+		"homepage": "https://github.com/defnot001/discord-api",
+		"sources": "https://github.com/defnot001/discord-api"
+	},
+	"license": "MIT",
+	"icon": "assets/discord-api/icon.png",
+	"environment": "*",
+	"entrypoints": {
+		"main": [
+			{
+				"value": "io.github.com.defnot001.Discordapi",
+				"adapter": "kotlin"
+			}
+		]
+	},
+	"mixins": [
+		"discord-api.mixins.json"
+	],
+	"depends": {
+		"fabricloader": ">=0.15.6",
+		"minecraft": "1.19.4",
+		"java": ">=17",
+		"fabric-api": "*",
+		"fabric-language-kotlin": ">=1.9.22"
+	}
+}
